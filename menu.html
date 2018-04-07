@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Atrium Cafe</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo-s.png">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800|Oswald|Poiret+One|Lato" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
+    <!-- BOOTSTRAP THINGIES -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+  </head>
+
+  <body>
+
+    <!---video background--->
+    <video autoplay muted loop controls="none" width="1000" height="1000" controls>
+      <source src="videos/menu.mp4" type="video/mp4">
+    </video>
+
+    <!--- burger --->
+      <div id="burger" onclick="openNav()" title="menu">
+        <div class="burger-item"></div>
+        <div class="burger-item"></div>
+        <div class="burger-item"></div>
+      </div>
+
+    <!--- odnośnik do strony głównej---->
+    <a href="index.html">
+      <div id="main-page" title="main page">
+        <div id="letter"> ^ </div>
+      </div>
+    </a>
+
+    <!--- navigation bar --->
+    <div id="navbar" class="container-fluid">
+        <a href="about.html">   <div class="nav-item text-center"> ABOUT        <div class="desc"> where and when to find us?    </div> </div></a>
+        <a href="coffee.html">  <div class="nav-item text-center"> COFFEE       <div class="desc"> make yourself addicted        </div> </div></a>
+        <a href="menu.html">    <div class="nav-item text-center"> MENU         <div class="desc"> what's cookin?                </div> </div></a>
+        <a href="careers.html"> <div class="nav-item text-center"> CAREERS      <div class="desc"> work with us                  </div> </div></a>
+        <a href="contact.html"> <div class="nav-item text-center"> CONTACT      <div class="desc"> get in touch                  </div> </div></a>
+        <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
+          <a href="https://facebook.com">   <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i>  </a>
+          <a href="https://instagram.com">  <i class="fa fa-instagram" aria-hidden="true" fa-4x></i>          </a>
+          <a href="https://twitter.com">    <i class="fa fa-twitter" aria-hidden="true"></i>                  </a>
+          <p>Copyright © 2017 Karolina Placek.   All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!--- close button of navbar --->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <div class="burger-item2"></div>
+      <div class="burger-item2"></div>
+    </a>
+
+
+    <!--- food menu --->
+    <div class="container article">
+
+      <div class="col-md-6">
+        <h2>BREAKFAST</h2>
+          <h3>DR. SEUSS</h3>
+            Thick cut bacon, hash brown, green ketchup, fried egg, pea puree, edamame, pea tendrils
+          <h3>LITTLE LOST BREAD</h3>
+            French Toast, meringue, vanilla cream, chestnut vermicelli
+          <h3>BREAKFAST WITH THE SAKUMAS</h3>
+            Miso grilled king salmon, smoked eel croquette, 63’ egg, radish petit salad, kewpi mayonnaise, furikake
+          <h3>UNCLE FRED</h3>
+            New York style pastrami, gruyere, sauerkraut, Russian dressing, wholemeal bread
+
+        <h2>SANDWICHES</h2>
+          <h3>HIDEAWAY</h3>
+            Rosemary cured ham, sweet potato scallion biscuit, two poached eggs, grainy mustard hollandaise, roasted tomatoes
+          <h3>BAN YASUO</h3>
+            Mashed peas, bacon, caramelized onions, chipotle mayo
+          <h3>SEND NUDLES</h3>
+            Fennel slaw, spicy mayo, jalapeños, manchego cheese, olive oil
+          <h3>GROWL</h3>
+            Dill dijonnaise, pear cherry chutney, grilled rosemary parmesan ciabatta
+
+        <h2>BEVERAGES</h2>
+          <h3>COLD DRINKS</h3>
+          Iced tea | Coke | Diet coke | Sprite |
+          Lemonade | Ginger ale | Still spring water
+
+          <h3>JUICES</h3>
+          Apple | Blackberry | Clementine | San Pellegrino | Orange
+
+          <h3>HOT TEAS</h3>
+          Strawberry Earl Grey | Mint | China Green | Chamomile | Vanilla
+      </div>
+
+      <div class="col-md-6">
+        <h2>SALADS</h2>
+          <h3>JUST RIGHT</h3>
+            Celery, fuji apple, lettuce, grapes, togarashi walnuts, goma dressing, poached chicken
+          <h3>SEVENTEEN CARATS</h3>
+            Apple julienne, field greens, local chèvre, toasted walnuts, roasted shallot vinaigrette
+          <h3>SPRING DAY</h3>
+            Baby arugula, grilled chicken, spicy pecans, dried cranberries, fresh oranges, feta cheese
+          <h3>SHANGRI-LA</h3>
+            Quinoa, tomato, jalapeños, cilantro, olive oil, lime
+
+        <h2>DESSERTS</h2>
+          <h3>LOST IN DEVONSHIRE</h3>
+            Atrium's style French toast, chantilly and maple ice cream
+          <h3>PORO-SNAX</h3>
+            Blood orange swirl. brûlée topping, white chocolate almond bark
+          <h3>HEXPLOSIVES EXPERT</h3>
+            Chocolate fudge sauce, toasted marshmallows, bourbon caramel, chocolate covered cocoa nibs
+          <h3>LADY OF CLOCKWORK</h3>
+            Blackberry-passionfruit, cherry-key lime, and strawberry-Meyer lemon sorbets with coconut macaroons
+          <h3>MILKY MOONLAKE</h3>
+            Mascarpone ice cream, orange caramel, candied pecans
+
+        <h2>SIDES</h2>
+          Bacon | Croissant | Toast | Pancakes |
+          Three Eggs | Breakfast Potatoes | Seasonal Fruit
+      </div>
+
+    </div>
+
+
+
+
+              <script>
+              /* Open when someone clicks on the span element */
+              function openNav()
+              {
+                  document.getElementById("navbar").style.width = "100%";
+                  document.getElementById("navbar").style.right = "0";
+                  document.getElementById("burger").style.display = "none";
+                  document.getElementsByClassName("closebtn")[0].style.display = "block";
+                  document.getElementById("main-page").style.display = "none";
+                  document.getElementsByClassName("article")[0].style.display = "none";
+                  document.getElementsByClassName("article")[1].style.display = "none";
+              }
+
+              /* Close when someone clicks on the "x" symbol inside the overlay */
+              function closeNav()
+              {
+                  document.getElementById("navbar").style.width = "0%";
+                  document.getElementById("burger").style.display = "block";
+                  document.getElementsByClassName("closebtn")[0].style.display = "none";
+                  document.getElementById("main-page").style.display = "block";
+                  document.getElementsByClassName("article")[0].style.display = "block";
+                  document.getElementsByClassName("article")[1].style.display = "block";
+              }
+              </script>
+
+              <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
+
+  </body>
+</html>

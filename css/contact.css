@@ -1,0 +1,26 @@
+/* ============================= ARTICLE ==================================== */
+.article
+{
+  background-color: rgba(17,10,4,0.8);
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 12px;
+  animation: show 1s ease-in;
+  margin-top: 12vh;
+  width: 65%;
+  padding: 20px 30px 40px 40px;
+}
+.article h3
+{
+  margin-top: 25px;
+}
+/* ============================= MAP =========================== */
+
+#map
+{
+  width: 35vw;
+  height: 30vw;
+  border: 2px solid #000;
+  opacity: 0.9;
+  margin-top: 20px;
+}

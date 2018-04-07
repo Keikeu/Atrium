@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Atrium Cafe</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo-s.png">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Poiret+One|Lato" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
+    <!-- BOOTSTRAP THINGIES -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/coffee.css"/>
+  </head>
+
+  <body>
+
+    <!---video background--->
+    <video autoplay muted loop controls="none" width="1000" height="1000" controls>
+      <source src="videos/coffee.mp4" type="video/mp4">
+    </video>
+
+    <!--- burger --->
+      <div id="burger" onclick="openNav()" title="menu">
+        <div class="burger-item"></div>
+        <div class="burger-item"></div>
+        <div class="burger-item"></div>
+      </div>
+
+    <!--- odnośnik do strony głównej---->
+    <a href="index.html">
+      <div id="main-page" title="main page">
+        <div id="letter"> ^ </div>
+      </div>
+    </a>
+
+    <!--- navigation bar --->
+    <div id="navbar" class="container-fluid">
+        <a href="about.html">   <div class="nav-item text-center"> ABOUT        <div class="desc"> where and when to find us?    </div> </div></a>
+        <a href="coffee.html">  <div class="nav-item text-center"> COFFEE       <div class="desc"> make yourself addicted        </div> </div></a>
+        <a href="menu.html">    <div class="nav-item text-center"> MENU         <div class="desc"> what's cookin?                </div> </div></a>
+        <a href="careers.html"> <div class="nav-item text-center"> CAREERS      <div class="desc"> work with us                  </div> </div></a>
+        <a href="contact.html"> <div class="nav-item text-center"> CONTACT      <div class="desc"> get in touch                  </div> </div></a>
+        <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
+          <a href="https://facebook.com">   <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i>  </a>
+          <a href="https://instagram.com">  <i class="fa fa-instagram" aria-hidden="true" fa-4x></i>          </a>
+          <a href="https://twitter.com">    <i class="fa fa-twitter" aria-hidden="true"></i>                  </a>
+          <p>Copyright © 2017 Karolina Placek.   All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!--- close button of navbar --->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <div class="burger-item2"></div>
+      <div class="burger-item2"></div>
+    </a>
+
+
+    <!--- coffee menu --->
+    <div class="container article">
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>ESPRESSO</h2>
+          <h3>BIG TROUBLE</h3>
+            Half a shot, twice the foam: a fresh espresso ‘ristretto’<br>
+            poured into a heavenly froth. Always hits the spot.
+          <h3>APOLLO</h3>
+            Bold espresso swirled with sweetened condensed milk,<br>
+            topped with creamy steamed milk, and finished with a warm cinnamon kick.
+          <h3>SLOW MOTION</h3>
+            Earthy sweetness of natural maple, hand-pulled espresso<br>
+            and perfectly steamed milk.
+        </div>
+        <div class="col-md-6">
+          <h2>POUR OVER</h2>
+          <h3>BLACK TIE</h3>
+            Italian espresso gets the American treatment; hot water fills<br>
+            the cup for a rich alternative to drip coffee.
+          <h3>NUEVA LUSTA</h3>
+            Layered sweetened condensed milk, Cold Brew iced coffee,<br>
+            chicory infused simple syrup, and a float of half and half.
+
+          <h2>ENAMEL</h2>
+          <h3>NINE SWANS</h3>
+            Baridi Blend Cold Brew with minty mojito syrup,<br>
+            layered atop sweetened condensed milk
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+              <script>
+              /* Open when someone clicks on the span element */
+              function openNav()
+              {
+                  document.getElementById("navbar").style.width = "100%";
+                  document.getElementById("navbar").style.right = "0";
+                  document.getElementById("burger").style.display = "none";
+                  document.getElementsByClassName("closebtn")[0].style.display = "block";
+                  document.getElementById("main-page").style.display = "none";
+                  document.getElementsByClassName("article")[0].style.display = "none";
+                  document.getElementsByClassName("article")[1].style.display = "none";
+              }
+
+              /* Close when someone clicks on the "x" symbol inside the overlay */
+              function closeNav()
+              {
+                  document.getElementById("navbar").style.width = "0%";
+                  document.getElementById("burger").style.display = "block";
+                  document.getElementsByClassName("closebtn")[0].style.display = "none";
+                  document.getElementById("main-page").style.display = "block";
+                  document.getElementsByClassName("article")[0].style.display = "block";
+                  document.getElementsByClassName("article")[1].style.display = "block";
+              }
+              </script>
+
+
+
+              <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
+  </body>
+</html>

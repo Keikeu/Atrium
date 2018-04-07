@@ -1,0 +1,31 @@
+/* ================ BURGER, CLOSE BUTTON, MAIN PAGE HYPERLINK ======================= */
+#burger
+{
+  border: 2px solid #4f321a;
+  background-color: #4f321a;
+  border-radius: 21px;
+  animation: show 4s ease-in;
+}
+.burger-item
+{
+  background-color: #fff;
+  margin-top: 4px;
+  margin-left: 9px;
+}
+#burger:hover
+{
+  background-color: #352417;
+}
+
+.closebtn
+{
+  border-radius: 21px;
+}
+
+/* =================================== LOGO ================================ */
+.logo
+{
+  height: 50vh;
+  margin-top: 25vh;
+  position: relative;
+}

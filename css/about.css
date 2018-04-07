@@ -1,0 +1,24 @@
+
+/* ============================= ARTICLE =============================== */
+
+.article
+{
+  background-color: rgba(17,10,4,0.8);
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 12px;
+  animation: show 1s ease-in;
+  margin-top: 12vh;
+  width: 65%;
+  padding: 20px 10px 50px 10px;
+}
+
+.article a
+{
+  text-decoration: underline;
+}
+.article .col-md-4
+{
+  padding-top: 30px;
+}

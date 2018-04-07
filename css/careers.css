@@ -1,0 +1,20 @@
+/* ============================= ARTICLE =============================== */
+.article
+{
+  background-color: rgba(17,10,4,0.85);
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 12px;
+  animation: show 1s ease-in;
+  margin-top: 12vh;
+  margin-bottom: 50px;
+  width: 65%;
+  padding: 40px 70px;
+}
+.article h2
+{
+  color: #d67437;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 50px 0px 20px 0px;
+}
