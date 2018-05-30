@@ -1,31 +1,66 @@
-/* ================ BURGER, CLOSE BUTTON, MAIN PAGE HYPERLINK ======================= */
-#burger
-{
-  border: 2px solid #4f321a;
-  background-color: #4f321a;
-  border-radius: 21px;
-  animation: show 4s ease-in;
-}
-.burger-item
-{
-  background-color: #fff;
-  margin-top: 4px;
-  margin-left: 9px;
-}
-#burger:hover
-{
-  background-color: #352417;
-}
-
-.closebtn
-{
-  border-radius: 21px;
-}
-
 /* =================================== LOGO ================================ */
 .logo
 {
-  height: 50vh;
-  margin-top: 25vh;
-  position: relative;
+  position: fixed;
+  top: 25vh;
+  left: 37.5vw;
+  width: 25vw;
+}
+
+.background
+{
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/index.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+/* ================================ NAVBAR ================================ */
+#burger
+{
+  display: none;
+}
+.wrapper
+{
+  width: 600px;
+  margin: auto;
+}
+.index-nav-item
+{
+  display: inline-block;
+  width: 120px;
+  float: left;
+  font-size: 20px;
+  font-family: "Lato";
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  transition-duration: 300ms;
+}
+.index-nav-item:hover
+{
+  border-bottom: 3px solid black;
+}
+.index-social
+{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+  #main-page, #burger, .index-social
+  {
+    display: block;
+  }
+  nav, .index-social
+  {
+    display: none;
+  }
 }

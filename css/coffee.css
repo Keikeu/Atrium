@@ -1,13 +1,21 @@
+body
+{
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/coffee.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* ============================= ARTICLE =============================== */
 .article
 {
   background-color: rgba(17,10,4,0.8);
-  font-family: 'Open Sans';
   color: #fff;
   letter-spacing: 1px;
   text-align: center;
   font-size: 12px;
-  animation: show 1s ease-in;
   margin-top: 12vh;
   width: 65%;
   padding: 10px 10px 50px 10px;
@@ -15,4 +23,16 @@
 .article h2
 {
   padding-top: 20px;
+}
+.row
+{
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px)
+{
+  .article
+  {
+    width: 100%;
+  }
 }

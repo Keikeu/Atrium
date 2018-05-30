@@ -1,3 +1,13 @@
+body
+{
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/contact.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* ============================= ARTICLE ==================================== */
 .article
 {
@@ -5,7 +15,6 @@
   color: #fff;
   letter-spacing: 1px;
   font-size: 12px;
-  animation: show 1s ease-in;
   margin-top: 12vh;
   width: 65%;
   padding: 20px 30px 40px 40px;
@@ -23,4 +32,17 @@
   border: 2px solid #000;
   opacity: 0.9;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px)
+{
+  #map
+  {
+    width: 80vw;
+    height: 40vh;
+  }
+  .article
+  {
+    width: 100%;
+  }
 }

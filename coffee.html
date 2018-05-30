@@ -18,26 +18,25 @@
 
   <body>
 
-    <!---video background--->
-    <video autoplay muted loop controls="none" width="1000" height="1000" controls>
-      <source src="videos/coffee.mp4" type="video/mp4">
-    </video>
 
-    <!--- burger --->
+    <!-- tło pod burgera dla małych urządzeń -->
+    <div class="burger-back"></div>
+
+    <!-- burger -->
       <div id="burger" onclick="openNav()" title="menu">
         <div class="burger-item"></div>
         <div class="burger-item"></div>
         <div class="burger-item"></div>
       </div>
 
-    <!--- odnośnik do strony głównej---->
-    <a href="index.html">
-      <div id="main-page" title="main page">
-        <div id="letter"> ^ </div>
-      </div>
-    </a>
+      <!-- odnośnik do strony głównej -->
+      <a href="index.html">
+        <div id="main-page" title="main page">
+          Atrium café
+        </div>
+      </a>
 
-    <!--- navigation bar --->
+    <!-- navigation bar -->
     <div id="navbar" class="container-fluid">
         <a href="about.html">   <div class="nav-item text-center"> ABOUT        <div class="desc"> where and when to find us?    </div> </div></a>
         <a href="coffee.html">  <div class="nav-item text-center"> COFFEE       <div class="desc"> make yourself addicted        </div> </div></a>
@@ -52,14 +51,14 @@
         </div>
     </div>
 
-    <!--- close button of navbar --->
+    <!-- close button of navbar -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
       <div class="burger-item2"></div>
       <div class="burger-item2"></div>
     </a>
 
 
-    <!--- coffee menu --->
+    <!-- coffee menu -->
     <div class="container article">
 
       <div class="row">

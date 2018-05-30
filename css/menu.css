@@ -1,3 +1,13 @@
+body
+{
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/menu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* ============================= ARTICLE =============================== */
 .article
 {
@@ -6,7 +16,6 @@
   letter-spacing: 1px;
   text-align: center;
   font-size: 12px;
-  animation: show 1s ease-in;
   margin-top: 12vh;
   margin-bottom: 50px;
   width: 65%;
@@ -20,4 +29,13 @@
 .article h3
 {
   margin-top: 40px;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+  .article
+  {
+    width: 100%;
+  }
 }
