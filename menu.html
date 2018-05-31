@@ -3,7 +3,7 @@
   <head>
     <title>Atrium Cafe</title>
     <meta charset="utf-8">
-    <link rel="icon" href="img/logo-s.png">
+    <link rel="icon" href="img/atrium33.png">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800|Oswald|Poiret+One|Lato" rel="stylesheet">
     <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
     <!-- BOOTSTRAP THINGIES -->
@@ -20,7 +20,7 @@
 
 
     <!-- tło pod burgera dla małych urządzeń -->
-    <div class="burger-back"></div>
+    <div id="burger-back"></div>
 
     <!-- burger -->
       <div id="burger" onclick="openNav()" title="menu">
@@ -137,7 +137,7 @@
                   document.getElementsByClassName("closebtn")[0].style.display = "block";
                   document.getElementById("main-page").style.display = "none";
                   document.getElementsByClassName("article")[0].style.display = "none";
-                  document.getElementsByClassName("article")[1].style.display = "none";
+                  document.getElementById("burger-back").style.display = "none";
               }
 
               /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -148,7 +148,7 @@
                   document.getElementsByClassName("closebtn")[0].style.display = "none";
                   document.getElementById("main-page").style.display = "block";
                   document.getElementsByClassName("article")[0].style.display = "block";
-                  document.getElementsByClassName("article")[1].style.display = "block";
+                  if (screen.width < 768) document.getElementById("burger-back").style.display = "block";
               }
               </script>
 

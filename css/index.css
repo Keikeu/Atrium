@@ -2,9 +2,9 @@
 .logo
 {
   position: fixed;
-  top: 25vh;
-  left: 37.5vw;
-  width: 25vw;
+  top: 27vh;
+  left: 35vw;
+  width: 30vw;
 }
 
 .background
@@ -35,14 +35,15 @@
   float: left;
   font-size: 20px;
   font-family: "Lato";
-  color: black;
-  border-bottom: 1px solid black;
+  font-weight: 700;
+  color: #512d1d;
+  border-bottom: 1px solid #512d1d;
   padding: 10px;
   transition-duration: 300ms;
 }
 .index-nav-item:hover
 {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #512d1d;
 }
 .index-social
 {
@@ -50,17 +51,29 @@
   bottom: 20px;
   right: 0;
   font-size: 20px;
+  color: #ccc;
 }
 
 
 @media only screen and (max-width: 768px)
 {
-  #main-page, #burger, .index-social
+  #main-page, .index-social
   {
+    display: block;
+  }
+  #burger
+  {
+    background-color: #512d1d;
     display: block;
   }
   nav, .index-social
   {
     display: none;
+  }
+  .logo
+  {
+    top: 35vh;
+    left: 10vw;
+    width: 80vw;
   }
 }
