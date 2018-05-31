@@ -19,7 +19,7 @@ body
   position: fixed;
   left: 3vh;
   top: 4vh;
-  z-index: 2;
+  z-index: 3;
 }
 #main-page:hover
 {
