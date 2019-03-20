@@ -1,5 +1,4 @@
-body
-{
+body {
   height: 100%;
   width: 100%;
   background-image: url("../img/coffee.jpg");
@@ -8,10 +7,10 @@ body
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* ============================= ARTICLE =============================== */
-.article
-{
-  background-color: rgba(17,10,4,0.8);
+.article {
+  background-color: rgba(17, 10, 4, 0.8);
   color: #fff;
   letter-spacing: 1px;
   text-align: center;
@@ -20,19 +19,17 @@ body
   width: 65%;
   padding: 10px 10px 50px 10px;
 }
-.article h2
-{
+
+.article h2 {
   padding-top: 20px;
 }
-.row
-{
+
+.row {
   margin: 0;
 }
 
-@media only screen and (max-width: 768px)
-{
-  .article
-  {
+@media only screen and (max-width: 768px) {
+  .article {
     width: 100%;
   }
 }

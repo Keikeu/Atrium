@@ -1,123 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Atrium Cafe</title>
-    <meta charset="utf-8">
-    <link rel="icon" href="img/atrium33.png">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,700|Oswald|Poiret+One|Raleway|Lato" rel="stylesheet">
-    <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
-    <!-- BOOTSTRAP THINGIES -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- STYLES -->
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/about.css"/>
-  </head>
 
-  <body>
+<head>
+  <title>Atrium Cafe</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/atrium33.png">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,700|Oswald|Poiret+One|Raleway|Lato" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
+  <!-- BOOTSTRAP THINGIES -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
 
+<body>
 
-    <!-- tło pod burgera dla małych urządzeń -->
-    <div id="burger-back"></div>
+  <!-- tło pod burgera dla małych urządzeń -->
+  <div id="burger-back"></div>
 
-    <!-- burger -->
-    <div id="burger" onclick="openNav()" title="menu">
-      <div class="burger-item"></div>
-      <div class="burger-item"></div>
-      <div class="burger-item"></div>
+  <!-- burger -->
+  <div id="burger" onclick="openNav()" title="menu">
+    <div class="burger-item"></div>
+    <div class="burger-item"></div>
+    <div class="burger-item"></div>
+  </div>
+
+  <!-- odnośnik do strony głównej -->
+  <a href="index.html">
+    <div id="main-page" title="Home page">
+      <img src="img/logo-white-2.svg" width="160" />
     </div>
+  </a>
 
-    <!-- odnośnik do strony głównej -->
-    <a href="index.html">
-      <div id="main-page" title="Home page">
-        Atrium café
+  <!-- navigation bar -->
+  <div id="navbar" class="container-fluid">
+    <a href="about.html">
+      <div class="nav-item text-center"> ABOUT <div class="desc"> where and when to find us? </div>
       </div>
     </a>
-
-    <!-- navigation bar -->
-    <div id="navbar" class="container-fluid">
-        <a href="about.html">   <div class="nav-item text-center"> ABOUT        <div class="desc"> where and when to find us?    </div> </div></a>
-        <a href="coffee.html">  <div class="nav-item text-center"> COFFEE       <div class="desc"> make yourself addicted        </div> </div></a>
-        <a href="menu.html">    <div class="nav-item text-center"> MENU         <div class="desc"> what's cookin?                </div> </div></a>
-        <a href="careers.html"> <div class="nav-item text-center"> CAREERS      <div class="desc"> work with us                  </div> </div></a>
-        <a href="contact.html"> <div class="nav-item text-center"> CONTACT      <div class="desc"> get in touch                  </div> </div></a>
-        <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
-          <a href="https://facebook.com">   <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i>  </a>
-          <a href="https://instagram.com">  <i class="fa fa-instagram" aria-hidden="true" fa-4x></i>          </a>
-          <a href="https://twitter.com">    <i class="fa fa-twitter" aria-hidden="true"></i>                  </a>
-          <p>Copyright © 2017 Karolina Placek.   All Rights Reserved.</p>
-        </div>
-    </div>
-
-    <!-- close button of navbar -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-      <div class="burger-item2"></div>
-      <div class="burger-item2"></div>
+    <a href="coffee.html">
+      <div class="nav-item text-center"> COFFEE <div class="desc"> make yourself addicted </div>
+      </div>
     </a>
-
-    <!-- main article -->
-
-    <div class="container article">
-
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h2>WE LOVE TO MAKE COFFEE FOR THE CITY <br>THAT LOVES TO DRINK IT.</h2><br><br>
-          We serve freshly brewed tea and coffee, fresh healthy drinks,
-          pressed juices and a selection of light meals, vegan options, tasty
-          treats &amp snacks. We are open for breakfast, lunch and dinner.
-        </div>
+    <a href="menu.html">
+      <div class="nav-item text-center"> MENU <div class="desc"> what's cookin? </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-4 col-md-offset-2">
-          <h3>WORKING HOURS</h3><br>
-          monday - thursday     <br>
-          8:00 AM - 3:00 PM     <br><br>
-          friday &amp saturday  <br>
-          8:00 AM - midnight    <br><br>
-          sunday                <br>
-          8:00 AM - 10:00 PM
-        </div>
-        <div class="col-md-4">
-          <h3>LOCATION</h3>       <br>
-          79 St Georges Bay Road  <br>
-          Parnell, Auckland       <br>
-          New Zealand             <br><br><br>
-          You can find us on the map <a href="#">here</a>
-        </div>
+    </a>
+    <a href="careers.html">
+      <div class="nav-item text-center"> CAREERS <div class="desc"> work with us </div>
       </div>
+    </a>
+    <a href="contact.html">
+      <div class="nav-item text-center"> CONTACT <div class="desc"> get in touch </div>
+      </div>
+    </a>
+    <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
+      <a href="https://facebook.com"> <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i> </a>
+      <a href="https://instagram.com"> <i class="fa fa-instagram" aria-hidden="true" fa-4x></i> </a>
+      <a href="https://twitter.com"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+      <p>Copyright © 2017 Karolina Placek. All Rights Reserved.</p>
+    </div>
+  </div>
 
+  <!-- close button of navbar -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    <div class="burger-item2"></div>
+    <div class="burger-item2"></div>
+  </a>
+
+  <!-- main article -->
+
+  <div class="container article">
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>WE LOVE TO MAKE COFFEE FOR THE CITY <br>THAT LOVES TO DRINK IT.</h2><br><br>
+        We serve freshly brewed tea and coffee, fresh healthy drinks,
+        pressed juices and a selection of light meals, vegan options, tasty
+        treats &amp snacks. We are open for breakfast, lunch and dinner.
+      </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2">
+        <h3>WORKING HOURS</h3><br>
+        monday - thursday <br>
+        8:00 AM - 3:00 PM <br><br>
+        friday &amp saturday <br>
+        8:00 AM - midnight <br><br>
+        sunday <br>
+        8:00 AM - 10:00 PM
+      </div>
+      <div class="col-md-4">
+        <h3>LOCATION</h3> <br>
+        79 St Georges Bay Road <br>
+        Parnell, Auckland <br>
+        New Zealand <br><br><br>
+        You can find us on the map <a href="#">here</a>
+      </div>
+    </div>
 
-              <script>
-              /* Open when someone clicks on the span element */
-              function openNav()
-              {
-                  document.getElementById("navbar").style.width = "100%";
-                  document.getElementById("navbar").style.right = "0";
-                  document.getElementById("burger").style.display = "none";
-                  document.getElementsByClassName("closebtn")[0].style.display = "block";
-                  document.getElementById("main-page").style.display = "none";
-                  document.getElementsByClassName("article")[0].style.display = "none";
-                  document.getElementById("burger-back").style.display = "none";
-              }
-
-              /* Close when someone clicks on the "x" symbol inside the overlay */
-              function closeNav()
-              {
-                  document.getElementById("navbar").style.width = "0%";
-                  document.getElementById("burger").style.display = "block";
-                  document.getElementsByClassName("closebtn")[0].style.display = "none";
-                  document.getElementById("main-page").style.display = "block";
-                  document.getElementsByClassName("article")[0].style.display = "block";
-                  if (screen.width < 768) document.getElementById("burger-back").style.display = "block";
-              }
-              </script>
+  </div>
 
 
-              <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
-  </body>
+  <script>
+    /* Open when someone clicks on the span element */
+    function openNav() {
+      document.getElementById("navbar").style.width = "100%";
+      document.getElementById("navbar").style.right = "0";
+      document.getElementById("burger").style.display = "none";
+      document.getElementsByClassName("closebtn")[0].style.display = "block";
+      document.getElementById("main-page").style.display = "none";
+      document.getElementsByClassName("article")[0].style.display = "none";
+      document.getElementById("burger-back").style.display = "none";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("navbar").style.width = "0%";
+      document.getElementById("burger").style.display = "block";
+      document.getElementsByClassName("closebtn")[0].style.display = "none";
+      document.getElementById("main-page").style.display = "block";
+      document.getElementsByClassName("article")[0].style.display = "block";
+      if (screen.width < 768) document.getElementById("burger-back").style.display = "block";
+    }
+  </script>
+
+  <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
+</body>
+
 </html>

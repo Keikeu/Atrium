@@ -1,5 +1,4 @@
-body
-{
+body {
   height: 100%;
   width: 100%;
   background-image: url("../img/careers.jpg");
@@ -8,10 +7,10 @@ body
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* ============================= ARTICLE =============================== */
-.article
-{
-  background-color: rgba(17,10,4,0.85);
+.article {
+  background-color: rgba(17, 10, 4, 0.85);
   color: #fff;
   letter-spacing: 1px;
   font-size: 12px;
@@ -20,21 +19,17 @@ body
   width: 65%;
   padding: 40px 70px;
 }
-.article h2
-{
+
+.article h2 {
   color: #d67437;
   font-weight: bold;
   letter-spacing: 2px;
   margin: 50px 0px 20px 0px;
 }
 
-
-@media only screen and (max-width: 768px)
-{
-  .article
-  {
+@media only screen and (max-width: 768px) {
+  .article {
     width: 100%;
     padding: 40px 20px;
   }
-
 }

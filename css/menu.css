@@ -1,5 +1,4 @@
-body
-{
+body {
   height: 100%;
   width: 100%;
   background-image: url("../img/menu.jpg");
@@ -8,10 +7,10 @@ body
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* ============================= ARTICLE =============================== */
-.article
-{
-  background-color: rgba(17,10,4,0.9);
+.article {
+  background-color: rgba(17, 10, 4, 0.9);
   color: #fff;
   letter-spacing: 1px;
   text-align: center;
@@ -22,20 +21,16 @@ body
   padding: 0 10px 50px 10px;
 }
 
-.article h2
-{
+.article h2 {
   margin-top: 70px;
 }
-.article h3
-{
+
+.article h3 {
   margin-top: 40px;
 }
 
-
-@media only screen and (max-width: 768px)
-{
-  .article
-  {
+@media only screen and (max-width: 768px) {
+  .article {
     width: 100%;
   }
 }

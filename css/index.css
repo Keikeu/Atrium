@@ -1,35 +1,30 @@
+body {
+  background-image: url("../img/index.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
 /* =================================== LOGO ================================ */
-.logo
-{
+.logo {
   position: fixed;
   top: 27vh;
   left: 35vw;
   width: 30vw;
 }
 
-.background
-{
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/index.jpg");
-  background-size: cover;
-  background-position: center top;
+/* ================================ NAVBAR ================================ */
+#burger {
+  display: none;
+  transition-duration: 200ms;
 }
 
-/* ================================ NAVBAR ================================ */
-#burger
-{
-  display: none;
-}
-.wrapper
-{
+.wrapper {
   width: 600px;
   margin: auto;
 }
-.index-nav-item
-{
+
+.index-nav-item {
   display: inline-block;
   width: 120px;
   float: left;
@@ -41,12 +36,12 @@
   padding: 10px;
   transition-duration: 300ms;
 }
-.index-nav-item:hover
-{
+
+.index-nav-item:hover {
   border-bottom: 3px solid #512d1d;
 }
-.index-social
-{
+
+.index-social {
   position: absolute;
   bottom: 20px;
   right: 0;
@@ -54,24 +49,21 @@
   color: #ccc;
 }
 
-
-@media only screen and (max-width: 768px)
-{
-  #main-page, .index-social
-  {
+@media only screen and (max-width: 768px) {
+  #main-page, .index-social {
     display: block;
   }
-  #burger
-  {
+
+  #burger {
     background-color: #512d1d;
     display: block;
   }
-  nav, .index-social
-  {
+
+  nav, .index-social {
     display: none;
   }
-  .logo
-  {
+
+  .logo {
     top: 35vh;
     left: 10vw;
     width: 80vw;

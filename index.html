@@ -1,109 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Atrium Cafe</title>
-    <meta charset="utf-8">
-    <link rel="icon" href="img/atrium33.png">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Poiret+One|Raleway|Lato:400,700" rel="stylesheet">
-    <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
-    <!-- BOOTSTRAP THINGIES -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- STYLES -->
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
-  </head>
 
-  <body>
+<head>
+  <title>Atrium Cafe</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/atrium33.png">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Poiret+One|Raleway|Lato:400,700" rel="stylesheet">
+  <!-- <script src="https://use.fontawesome.com/ff38e0c35d.js"></script> -->
+  <!-- BOOTSTRAP THINGIES -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
 
-    <!-- background picture -->
-    <div class="background"></div>
+<body>
 
-    <!-- navigation bar -->
-    <nav class="container-fluid">
-      <div class="wrapper">
-        <a href="about.html">   <div class="index-nav-item text-center"> about        </div></a>
-        <a href="coffee.html">  <div class="index-nav-item text-center"> coffee       </div></a>
-        <a href="menu.html">    <div class="index-nav-item text-center"> menu         </div></a>
-        <a href="careers.html"> <div class="index-nav-item text-center"> careers      </div></a>
-        <a href="contact.html"> <div class="index-nav-item text-center"> contact      </div></a>
-      </div>
-    </nav>
-
-    <!-- burger -->
-      <div id="burger" onclick="openNav()" title="menu">
-        <div class="burger-item"></div>
-        <div class="burger-item"></div>
-        <div class="burger-item"></div>
-      </div>
-
-    <!-- navigation bar -->
-    <div id="navbar" class="container-fluid">
-        <a href="about.html">   <div class="nav-item text-center"> ABOUT        <div class="desc"> where and when to find us?    </div> </div></a>
-        <a href="coffee.html">  <div class="nav-item text-center"> COFFEE       <div class="desc"> make yourself addicted        </div> </div></a>
-        <a href="menu.html">    <div class="nav-item text-center"> MENU         <div class="desc"> what's cookin?                </div> </div></a>
-        <a href="careers.html"> <div class="nav-item text-center"> CAREERS      <div class="desc"> work with us                  </div> </div></a>
-        <a href="contact.html"> <div class="nav-item text-center"> CONTACT      <div class="desc"> get in touch                  </div> </div></a>
-        <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
-          <a href="https://facebook.com">   <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i>  </a>
-          <a href="https://instagram.com">  <i class="fa fa-instagram" aria-hidden="true" fa-4x></i>          </a>
-          <a href="https://twitter.com">    <i class="fa fa-twitter" aria-hidden="true"></i>                  </a>
-          <p>Copyright © 2017 Karolina Placek.   All Rights Reserved.</p>
-        </div>
+  <!-- navigation bar -->
+  <nav class="container-fluid">
+    <div class="wrapper">
+      <a href="about.html">
+        <div class="index-nav-item text-center"> about </div>
+      </a>
+      <a href="coffee.html">
+        <div class="index-nav-item text-center"> coffee </div>
+      </a>
+      <a href="menu.html">
+        <div class="index-nav-item text-center"> menu </div>
+      </a>
+      <a href="careers.html">
+        <div class="index-nav-item text-center"> careers </div>
+      </a>
+      <a href="contact.html">
+        <div class="index-nav-item text-center"> contact </div>
+      </a>
     </div>
+  </nav>
 
-    <!-- close button of navbar -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-      <div class="burger-item2"></div>
-      <div class="burger-item2"></div>
+  <!-- burger -->
+  <div id="burger" onclick="openNav()">
+    <div class="burger-item"></div>
+    <div class="burger-item"></div>
+    <div class="burger-item"></div>
+  </div>
+
+  <!-- navigation bar -->
+  <div id="navbar" class="container-fluid">
+    <a href="about.html">
+      <div class="nav-item text-center"> About <div class="desc"> where and when to find us? </div>
+      </div>
     </a>
-
-    <!-- logo only -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 centered">
-          <img src="img/atrium22.png" class="logo center-block"/>
-        </div>
-      </row>
+    <a href="coffee.html">
+      <div class="nav-item text-center"> Coffee <div class="desc"> make yourself addicted </div>
+      </div>
+    </a>
+    <a href="menu.html">
+      <div class="nav-item text-center"> Menu <div class="desc"> what's cookin? </div>
+      </div>
+    </a>
+    <a href="careers.html">
+      <div class="nav-item text-center"> Careers <div class="desc"> work with us </div>
+      </div>
+    </a>
+    <a href="contact.html">
+      <div class="nav-item text-center"> Contact <div class="desc"> get in touch </div>
+      </div>
+    </a>
+    <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
+      <a href="https://facebook.com"> <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i> </a>
+      <a href="https://instagram.com"> <i class="fa fa-instagram" aria-hidden="true" fa-4x></i> </a>
+      <a href="https://twitter.com"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+      <p>Copyright © 2019 Karolina Placek. All Rights Reserved.</p>
     </div>
+  </div>
 
+  <!-- close button of navbar -->
+  <div id="closebtn" class="closebtn" onclick="closeNav()">
+    <div class="burger-item2"></div>
+    <div class="burger-item2"></div>
+  </div>
 
-    <div class="index-social">
-      <a href="https://facebook.com">   <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i>  </a>
-      <a href="https://instagram.com">  <i class="fa fa-instagram" aria-hidden="true" fa-4x></i>          </a>
-      <a href="https://twitter.com">    <i class="fa fa-twitter" aria-hidden="true"></i>                  </a>
+  <!-- logo only -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 centered">
+        <img src="img/atrium22.png" class="logo center-block" />
+      </div>
     </div>
-
-    <script>
-      function openNav()
-      {
-          document.getElementById("navbar").style.width = "100%";
-          document.getElementById("navbar").style.right = "0";
-          document.getElementById("burger").style.display = "none";
-          document.getElementsByClassName("closebtn")[0].style.display = "block";
-          document.getElementsByClassName("logo")[0].style.display = "none";
-          document.getElementById("burger-back").style.display = "none";
-          document.getElementsByClassName("article")[0].style.display = "none";
-          document.getElementsByClassName("article")[1].style.display = "none";
-      }
-
-      /* Close when someone clicks on the "x" symbol inside the overlay */
-      function closeNav()
-      {
-          document.getElementById("navbar").style.width = "0%";
-          document.getElementById("burger").style.display = "block";
-          document.getElementsByClassName("closebtn")[0].style.display = "none";
-          document.getElementsByClassName("logo")[0].style.display = "block";
-          document.getElementById("burger-back").style.display = "block";
-          document.getElementsByClassName("article")[0].style.display = "block";
-          document.getElementsByClassName("article")[1].style.display = "block";
-      }
-    </script>
+  </div>
 
 
-<script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
+  <div class="index-social">
+    <a href="https://facebook.com"> <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i> </a>
+    <a href="https://instagram.com"> <i class="fa fa-instagram" aria-hidden="true" fa-4x></i> </a>
+    <a href="https://twitter.com"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+  </div>
 
-  </body>
+  <script>
+    function openNav() {
+      document.getElementById("burger").style.opacity = 0;
+      document.getElementById("burger").style.visibility = "hidden";
+      document.getElementById("navbar").style.width = "100%";
+      document.getElementById("navbar").style.right = "0";
+      document.getElementById("closebtn").style.opacity = 1;
+      document.getElementById("closebtn").style.visibility = "visible";
+      // document.getElementsByClassName("logo")[0].style.display = "none";
+      // document.getElementById("burger-back").style.display = "none";
+      // document.getElementsByClassName("article")[0].style.display = "none";
+      // document.getElementsByClassName("article")[1].style.display = "none";
+    }
+
+    function closeNav() {
+      document.getElementById("burger").style.opacity = 1;
+      document.getElementById("burger").style.visibility = "visible";
+      // document.getElementById("navbar").style.width = "0%";
+      // document.getElementsByClassName("closebtn")[0].style.display = "none";
+      // document.getElementsByClassName("logo")[0].style.display = "block";
+      // document.getElementById("burger-back").style.display = "block";
+      // document.getElementsByClassName("article")[0].style.display = "block";
+      // document.getElementsByClassName("article")[1].style.display = "block";
+    }
+  </script>
+  <!-- <script src="https://use.fontawesome.com/ff38e0c35d.js"></script> -->
+</body>
+
 </html>

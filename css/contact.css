@@ -1,5 +1,4 @@
-body
-{
+body {
   height: 100%;
   width: 100%;
   background-image: url("../img/contact.jpg");
@@ -8,10 +7,10 @@ body
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* ============================= ARTICLE ==================================== */
-.article
-{
-  background-color: rgba(17,10,4,0.8);
+.article {
+  background-color: rgba(17, 10, 4, 0.8);
   color: #fff;
   letter-spacing: 1px;
   font-size: 12px;
@@ -19,14 +18,13 @@ body
   width: 65%;
   padding: 20px 30px 40px 40px;
 }
-.article h3
-{
+
+.article h3 {
   margin-top: 25px;
 }
-/* ============================= MAP =========================== */
 
-#map
-{
+/* ============================= MAP =========================== */
+#map {
   width: 35vw;
   height: 30vw;
   border: 2px solid #000;
@@ -34,15 +32,13 @@ body
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 768px)
-{
-  #map
-  {
+@media only screen and (max-width: 768px) {
+  #map {
     width: 80vw;
     height: 40vh;
   }
-  .article
-  {
+
+  .article {
     width: 100%;
   }
 }
