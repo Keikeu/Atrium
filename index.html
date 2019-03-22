@@ -19,69 +19,63 @@
 
 <body>
 
-  <!-- navigation bar -->
-  <nav class="container-fluid">
+  <nav class="nav nav--desktop container-fluid">
     <div class="wrapper">
       <a href="about.html">
-        <div class="index-nav-item text-center"> about </div>
+        <div class="nav__item"> about </div>
       </a>
       <a href="coffee.html">
-        <div class="index-nav-item text-center"> coffee </div>
+        <div class="nav__item"> coffee </div>
       </a>
       <a href="menu.html">
-        <div class="index-nav-item text-center"> menu </div>
+        <div class="nav__item"> menu </div>
       </a>
       <a href="careers.html">
-        <div class="index-nav-item text-center"> careers </div>
+        <div class="nav__item"> careers </div>
       </a>
       <a href="contact.html">
-        <div class="index-nav-item text-center"> contact </div>
+        <div class="nav__item"> contact </div>
       </a>
     </div>
   </nav>
 
-  <!-- burger -->
-  <div id="burger" onclick="openNav()">
-    <div class="burger-item"></div>
-    <div class="burger-item"></div>
-    <div class="burger-item"></div>
+  <div class="nav-btn nav-btn--open" onclick="toggleNav()">
+    <i class="fas fa-bars"></i>
   </div>
 
-  <!-- navigation bar -->
-  <div id="navbar" class="container-fluid">
+  <div class="nav-btn nav-btn--close" onclick="toggleNav()">
+    <i class="fas fa-times"></i>
+  </div>
+
+  <nav class="nav nav--mobile container-fluid">
     <a href="about.html">
-      <div class="nav-item text-center"> About <div class="desc"> where and when to find us? </div>
+      <div class="nav__item"> About <div class="desc"> where and when to find us? </div>
       </div>
     </a>
     <a href="coffee.html">
-      <div class="nav-item text-center"> Coffee <div class="desc"> make yourself addicted </div>
+      <div class="nav__item"> Coffee <div class="desc"> make yourself addicted </div>
       </div>
     </a>
     <a href="menu.html">
-      <div class="nav-item text-center"> Menu <div class="desc"> what's cookin? </div>
+      <div class="nav__item"> Menu <div class="desc"> what's cookin? </div>
       </div>
     </a>
     <a href="careers.html">
-      <div class="nav-item text-center"> Careers <div class="desc"> work with us </div>
+      <div class="nav__item"> Careers <div class="desc"> work with us </div>
       </div>
     </a>
     <a href="contact.html">
-      <div class="nav-item text-center"> Contact <div class="desc"> get in touch </div>
+      <div class="nav__item"> Contact <div class="desc"> get in touch </div>
       </div>
     </a>
-    <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
-      <a href="https://facebook.com"> <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i> </a>
-      <a href="https://instagram.com"> <i class="fa fa-instagram" aria-hidden="true" fa-4x></i> </a>
-      <a href="https://twitter.com"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
+    <div class="nav__item nav__item--tall">
+      <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+      <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+      <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
       <p>Copyright © 2019 Karolina Placek. All Rights Reserved.</p>
     </div>
-  </div>
+  </nav>
 
-  <!-- close button of navbar -->
-  <div id="closebtn" class="closebtn" onclick="closeNav()">
-    <div class="burger-item2"></div>
-    <div class="burger-item2"></div>
-  </div>
 
   <!-- logo only -->
   <div class="container-fluid">
@@ -99,31 +93,7 @@
     <a href="https://twitter.com"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
   </div>
 
-  <script>
-    function openNav() {
-      document.getElementById("burger").style.opacity = 0;
-      document.getElementById("burger").style.visibility = "hidden";
-      document.getElementById("navbar").style.width = "100%";
-      document.getElementById("navbar").style.right = "0";
-      document.getElementById("closebtn").style.opacity = 1;
-      document.getElementById("closebtn").style.visibility = "visible";
-      // document.getElementsByClassName("logo")[0].style.display = "none";
-      // document.getElementById("burger-back").style.display = "none";
-      // document.getElementsByClassName("article")[0].style.display = "none";
-      // document.getElementsByClassName("article")[1].style.display = "none";
-    }
-
-    function closeNav() {
-      document.getElementById("burger").style.opacity = 1;
-      document.getElementById("burger").style.visibility = "visible";
-      // document.getElementById("navbar").style.width = "0%";
-      // document.getElementsByClassName("closebtn")[0].style.display = "none";
-      // document.getElementsByClassName("logo")[0].style.display = "block";
-      // document.getElementById("burger-back").style.display = "block";
-      // document.getElementsByClassName("article")[0].style.display = "block";
-      // document.getElementsByClassName("article")[1].style.display = "block";
-    }
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

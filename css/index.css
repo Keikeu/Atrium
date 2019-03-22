@@ -2,7 +2,6 @@ body {
   background-image: url("../img/index.jpg");
 }
 
-/* =================================== LOGO ================================ */
 .logo {
   position: fixed;
   top: 27vh;
@@ -10,18 +9,7 @@ body {
   width: 30vw;
 }
 
-/* ================================ NAVBAR ================================ */
-#burger {
-  display: none;
-  transition-duration: 200ms;
-}
-
-.wrapper {
-  width: 600px;
-  margin: auto;
-}
-
-.index-nav-item {
+.nav--desktop .nav__item {
   display: inline-block;
   width: 120px;
   float: left;
@@ -29,40 +17,12 @@ body {
   font-family: "Lato";
   font-weight: 700;
   color: #512d1d;
+  text-align: center;
   border-bottom: 1px solid #512d1d;
   padding: 10px;
   transition-duration: 300ms;
 }
 
-.index-nav-item:hover {
+.nav--desktop .nav__item:hover {
   border-bottom: 3px solid #512d1d;
-}
-
-.index-social {
-  position: absolute;
-  bottom: 20px;
-  right: 0;
-  font-size: 20px;
-  color: #ccc;
-}
-
-@media only screen and (max-width: 768px) {
-  #main-page, .index-social {
-    display: block;
-  }
-
-  #burger {
-    background-color: #512d1d;
-    display: block;
-  }
-
-  nav, .index-social {
-    display: none;
-  }
-
-  .logo {
-    top: 35vh;
-    left: 10vw;
-    width: 80vw;
-  }
 }

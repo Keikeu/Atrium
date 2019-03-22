@@ -18,61 +18,51 @@
 </head>
 
 <body>
-
-  <!-- tło pod burgera dla małych urządzeń -->
   <div id="burger-back"></div>
 
-  <!-- burger -->
-  <div id="burger" onclick="openNav()" title="menu">
-    <div class="burger-item"></div>
-    <div class="burger-item"></div>
-    <div class="burger-item"></div>
+  <div class="nav-btn nav-btn--open" onclick="toggleNav()">
+    <i class="fas fa-bars"></i>
   </div>
 
-  <!-- odnośnik do strony głównej -->
+  <div class="nav-btn nav-btn--close" onclick="toggleNav()">
+    <i class="fas fa-times"></i>
+  </div>
+
   <a href="index.html">
     <div id="main-page" title="main page">
       Atrium café
     </div>
   </a>
 
-  <!-- navigation bar -->
-  <div id="navbar" class="container-fluid">
+  <nav class="nav nav--mobile container-fluid">
     <a href="about.html">
-      <div class="nav-item text-center"> ABOUT <div class="desc"> where and when to find us? </div>
+      <div class="nav__item"> About <div class="desc"> where and when to find us? </div>
       </div>
     </a>
     <a href="coffee.html">
-      <div class="nav-item text-center"> COFFEE <div class="desc"> make yourself addicted </div>
+      <div class="nav__item"> Coffee <div class="desc"> make yourself addicted </div>
       </div>
     </a>
     <a href="menu.html">
-      <div class="nav-item text-center"> MENU <div class="desc"> what's cookin? </div>
+      <div class="nav__item"> Menu <div class="desc"> what's cookin? </div>
       </div>
     </a>
     <a href="careers.html">
-      <div class="nav-item text-center"> CAREERS <div class="desc"> work with us </div>
+      <div class="nav__item"> Careers <div class="desc"> work with us </div>
       </div>
     </a>
     <a href="contact.html">
-      <div class="nav-item text-center"> CONTACT <div class="desc"> get in touch </div>
+      <div class="nav__item"> Contact <div class="desc"> get in touch </div>
       </div>
     </a>
-    <div class="nav-item text-center" style="height: 25vh; padding-top: 70px">
-      <a href="https://facebook.com"> <i class="fa fa-facebook-official" aria-hidden="true" fa-2x></i> </a>
-      <a href="https://instagram.com"> <i class="fa fa-instagram" aria-hidden="true" fa-4x></i> </a>
-      <a href="https://twitter.com"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>
-      <p>Copyright © 2017 Karolina Placek. All Rights Reserved.</p>
+    <div class="nav__item nav__item--tall">
+      <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+      <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+      <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+      <p>Copyright © 2019 Karolina Placek. All Rights Reserved.</p>
     </div>
-  </div>
+  </nav>
 
-  <!-- close button of navbar -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-    <div class="burger-item2"></div>
-    <div class="burger-item2"></div>
-  </a>
-
-  <!-- contact info -->
   <div class="container article">
     <div class="row">
       <div class="col-md-5">
@@ -94,52 +84,7 @@
     </div>
   </div>
 
-  <script>
-    function openNav() {
-      document.getElementById("navbar").style.width = "100%";
-      document.getElementById("navbar").style.right = "0";
-      document.getElementById("burger").style.display = "none";
-      document.getElementsByClassName("closebtn")[0].style.display = "block";
-      document.getElementById("main-page").style.display = "none";
-      document.getElementsByClassName("article")[0].style.display = "none";
-      document.getElementById("burger-back").style.display = "none";
-    }
-
-
-    function closeNav() {
-      document.getElementById("navbar").style.width = "0%";
-      document.getElementById("burger").style.display = "block";
-      document.getElementsByClassName("closebtn")[0].style.display = "none";
-      document.getElementById("main-page").style.display = "block";
-      document.getElementsByClassName("article")[0].style.display = "block";
-      if (screen.width < 768) document.getElementById("burger-back").style.display = "block";
-    }
-  </script>
-  <script>
-    function myMap() {
-      var myLatLng = {
-        lat: -36.852888,
-        lng: 174.782682
-      };
-      var centerLatLng = {
-        lat: -36.852888,
-        lng: 174.777382
-      };
-
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: centerLatLng
-      });
-
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-      });
-    }
-  </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsXJ6UG35nr1fMh3Of2xzB5m4N-4ICg9w&callback=myMap"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
