@@ -2,28 +2,12 @@ body {
   background-image: url("../img/careers.jpg");
 }
 
-/* ============================= ARTICLE =============================== */
-.article {
-  background-color: rgba(17, 10, 4, 0.85);
-  color: #fff;
-  letter-spacing: 1px;
-  font-size: 12px;
-  margin-top: 12vh;
-  margin-bottom: 50px;
-  width: 65%;
-  padding: 40px 70px;
+main {
+  padding: 0px 7% 50px;
 }
 
-.article h2 {
-  color: #d67437;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin: 50px 0px 20px 0px;
-}
-
-@media only screen and (max-width: 768px) {
-  .article {
-    width: 100%;
-    padding: 40px 20px;
-  }
+main > p:last-child {
+  width: 100%;
+  text-align: left;
+  margin-top: 60px;
 }

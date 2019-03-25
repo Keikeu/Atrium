@@ -2,28 +2,6 @@ body {
   background-image: url("../img/coffee.jpg");
 }
 
-/* ============================= ARTICLE =============================== */
-.article {
-  background-color: rgba(17, 10, 4, 0.8);
-  color: #fff;
-  letter-spacing: 1px;
-  text-align: center;
-  font-size: 12px;
-  margin-top: 12vh;
-  width: 65%;
+main {
   padding: 10px 10px 50px 10px;
-}
-
-.article h2 {
-  padding-top: 20px;
-}
-
-.row {
-  margin: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .article {
-    width: 100%;
-  }
 }
