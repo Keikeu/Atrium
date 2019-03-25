@@ -1,5 +1,6 @@
 body {
   background-image: url("../img/coffee.jpg");
+  background-size: cover;
 }
 
 main {
