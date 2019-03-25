@@ -9,20 +9,11 @@ body {
 }
 
 /* ======================= MAIN PAGE HYPERLINK ========================== */
-#main-page {
-  text-align: center;
-  font-size: 26px;
-  font-weight: 800;
-  font-family: 'Poiret One';
-  color: #fff;
+.homepage-link {
   position: fixed;
-  left: 3vh;
-  top: 4vh;
+  left: 2vh;
+  top: 2vh;
   z-index: 3;
-}
-
-#main-page:hover {
-  cursor: pointer;
 }
 
 /* =============================== BURGER ================================== */
@@ -43,6 +34,7 @@ body {
   transition-duration: 200ms;
   line-height: 40px;
 }
+
 .nav-btn i {
   width: 40px;
 }
