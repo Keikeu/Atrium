@@ -7,12 +7,7 @@
   <link rel="icon" href="img/atrium33.png">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Poiret+One|Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <!-- BOOTSTRAP THINGIES -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- STYLES -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/coffee.css" />
 </head>
@@ -20,7 +15,7 @@
 <body>
 
   <div class="nav-background"></div>
-  <nav class="nav nav--desktop container-fluid">
+  <nav class="nav nav--desktop">
     <a href="about.html">
       <div class="nav__item"> about </div>
     </a>
@@ -52,7 +47,7 @@
     </div>
   </a>
 
-  <nav class="nav nav--mobile container-fluid">
+  <nav class="nav nav--mobile">
     <a href="about.html">
       <div class="nav__item"> About <div class="desc"> where and when to find us? </div>
       </div>
@@ -81,47 +76,31 @@
     </div>
   </nav>
 
-  <!-- close button of navbar -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-    <div class="burger-item2"></div>
-    <div class="burger-item2"></div>
-  </a>
-
-  <!-- coffee menu -->
-  <div class="container article">
-
-    <div class="row">
-      <div class="col-md-6">
-        <h2>ESPRESSO</h2>
-        <h3>BIG TROUBLE</h3>
-        Half a shot, twice the foam: a fresh espresso ‘ristretto’<br>
-        poured into a heavenly froth. Always hits the spot.
-        <h3>APOLLO</h3>
-        Bold espresso swirled with sweetened condensed milk,<br>
-        topped with creamy steamed milk, and finished with a warm cinnamon kick.
-        <h3>SLOW MOTION</h3>
-        Earthy sweetness of natural maple, hand-pulled espresso<br>
-        and perfectly steamed milk.
-      </div>
-      <div class="col-md-6">
-        <h2>POUR OVER</h2>
-        <h3>BLACK TIE</h3>
-        Italian espresso gets the American treatment; hot water fills<br>
-        the cup for a rich alternative to drip coffee.
-        <h3>NUEVA LUSTA</h3>
-        Layered sweetened condensed milk, Cold Brew iced coffee,<br>
-        chicory infused simple syrup, and a float of half and half.
-
-        <h2>ENAMEL</h2>
-        <h3>NINE SWANS</h3>
-        Baridi Blend Cold Brew with minty mojito syrup,<br>
-        layered atop sweetened condensed milk
-      </div>
+  <main>
+    <div class="column">
+      <h1>Espresso</h1>
+      <h2>Big Trouble</h2>
+      <p>Half a shot, twice the foam: a fresh espresso ‘ristretto’ poured into a heavenly froth. Always hits the spot.</p>
+      <h2>Apollo</h2>
+      <p>Bold espresso swirled with sweetened condensed milk, topped with creamy steamed milk, and finished with a warm cinnamon kick.</p>
+      <h2>Slow Motion</h2>
+      <p>Earthy sweetness of natural maple, hand-pulled espresso and perfectly steamed milk.</p>
     </div>
+    <div class="column">
+      <h1>Pour Over</h1>
+      <h2>Black Tie</h2>
+      <p>Italian espresso gets the American treatment; hot water fills the cup for a rich alternative to drip coffee.</p>
+      <h2>Nueva Lusta</h2>
+      <p>Layered sweetened condensed milk, Cold Brew iced coffee, chicory infused simple syrup, and a float of half and half.</p>
 
-  </div>
+      <h1>Enamel</h1>
+      <h2>Nine Swans</h2>
+      <p>Baridi Blend Cold Brew with minty mojito syrup, layered atop sweetened condensed milk.</p>
+    </div>
+  </main>
 
   <script src="js/script.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
 </body>
 
 </html>

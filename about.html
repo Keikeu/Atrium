@@ -7,12 +7,7 @@
   <link rel="icon" href="img/atrium33.png">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,700|Oswald|Poiret+One|Raleway|Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <!-- BOOTSTRAP THINGIES -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- STYLES -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/about.css" />
 </head>
@@ -20,7 +15,7 @@
 <body>
 
   <div class="nav-background"></div>
-  <nav class="nav nav--desktop container-fluid">
+  <nav class="nav nav--desktop">
     <a href="about.html">
       <div class="nav__item nav__item--active"> about </div>
     </a>
@@ -52,7 +47,7 @@
     </div>
   </a>
 
-  <nav class="nav nav--mobile container-fluid">
+  <nav class="nav nav--mobile">
     <a href="about.html">
       <div class="nav__item"> About <div class="desc"> where and when to find us? </div>
       </div>
@@ -81,39 +76,46 @@
     </div>
   </nav>
 
-  <div class="container article">
-
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h2>WE LOVE TO MAKE COFFEE FOR THE CITY <br>THAT LOVES TO DRINK IT.</h2><br><br>
-        We serve freshly brewed tea and coffee, fresh healthy drinks,
-        pressed juices and a selection of light meals, vegan options, tasty
-        treats &amp snacks. We are open for breakfast, lunch and dinner.
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 col-md-offset-2">
-        <h3>WORKING HOURS</h3><br>
-        monday - thursday <br>
-        8:00 AM - 3:00 PM <br><br>
-        friday &amp saturday <br>
-        8:00 AM - midnight <br><br>
-        sunday <br>
+  <main>
+    <header>
+      <h1>
+        We love to make coffee for the city <br>
+        that loves to drink it.
+      </h1>
+      <p class="subheader">
+        We serve freshly brewed tea and coffee, fresh healthy drinks, pressed juices and a selection of light meals, vegan options, tasty treats &amp snacks. We are open for breakfast, lunch and dinner.
+      </p>
+    </header>
+    <div class="column">
+      <h2>Working hours</h2>
+      <p>
+        Monday - Thursday <br>
+        8:00 AM - 3:00 PM
+      </p>
+      <p>
+        Friday &amp Saturday <br>
+        8:00 AM - midnight
+      </p>
+      <p>
+        Sunday <br>
         8:00 AM - 10:00 PM
-      </div>
-      <div class="col-md-4">
-        <h3>LOCATION</h3> <br>
+      </p>
+    </div>
+    <div class="column">
+      <h2>Location</h2>
+      <p>
         79 St Georges Bay Road <br>
         Parnell, Auckland <br>
-        New Zealand <br><br><br>
+        New Zealand
+      </p>
+      <p>
         You can find us on the map <a href="#">here</a>
-      </div>
+      </p>
     </div>
-
-  </div>
+  </main>
 
   <script src="js/script.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
 </body>
 
 </html>

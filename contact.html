@@ -7,12 +7,7 @@
   <link rel="icon" href="img/atrium33.png">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,700|Oswald|Poiret+One|Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <!-- BOOTSTRAP THINGIES -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- STYLES -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/contact.css" />
 </head>
@@ -20,7 +15,7 @@
 <body>
 
   <div class="nav-background"></div>
-  <nav class="nav nav--desktop container-fluid">
+  <nav class="nav nav--desktop">
     <a href="about.html">
       <div class="nav__item"> about </div>
     </a>
@@ -52,7 +47,7 @@
     </div>
   </a>
 
-  <nav class="nav nav--mobile container-fluid">
+  <nav class="nav nav--mobile">
     <a href="about.html">
       <div class="nav__item"> About <div class="desc"> where and when to find us? </div>
       </div>
@@ -71,7 +66,8 @@
     </a>
     <a href="contact.html">
       <div class="nav__item"> Contact <div class="desc"> get in touch </div>
-      </div>
+    </div>  <script src="js/script.js"></script>
+
     </a>
     <div class="nav__item nav__item--tall">
       <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
@@ -81,28 +77,29 @@
     </div>
   </nav>
 
-  <div class="container article">
-    <div class="row">
-      <div class="col-md-5">
-        <h2>ATRIUM CAFE</h2>
-        <h3>PHONE </h3>
-        (212) 400-0199
-        <h3>E-MAIL (normal) </h3>
-        contact@atriumcafe.com
-        <h3>E-MAIL (careers) </h3>
-        jobs@atriumcafe.com
-        <h3>ADDRESS </h3>
+  <main>
+    <div class="column">
+      <h1>Atrium Cafe</h2>
+      <h2>Phone </h2>
+      <p>(212) 400-0199</p>
+      <h2>Email (normal) </h2>
+      <p>contact@atriumcafe.com</p>
+      <h2>Email (careers) </h2>
+      <p>jobs@atriumcafe.com</p>
+      <h2>Address </h2>
+      <p>
         79 St Georges Bay Road <br>
         Parnell, Auckland <br>
         New Zealand
-      </div>
-      <div class="col-md-7">
-        <div id="map"></div>
-      </div>
+      </p>
     </div>
-  </div>
-
+    <div class="column">
+      <img class="map" src="img/map.png">
+    </div>
+  </main>
+  
   <script src="js/script.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
 </body>
 
 </html>
