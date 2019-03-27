@@ -88,11 +88,10 @@ i {
   display: none;
   height: 42px;
   width: 42px;
-  border: 1px solid #ffffff;
-  background-color: #211408;
-  opacity: 0.9;
+  border: 1px solid #fff;
+  background-color: #110a04;
   font-size: 24px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   line-height: 40px;
   cursor: pointer; }
@@ -130,7 +129,7 @@ i {
     box-shadow: inset 0px -1px 0px 0px white;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     transition-duration: .3s; }
   .nav--desktop .nav__item:hover,
@@ -163,7 +162,7 @@ i {
     text-align: center;
     transition: 400ms; }
     .nav--mobile .nav__item:hover {
-      background-color: rgba(53, 36, 23, 0.9); }
+      background-color: #352417; }
     .nav--mobile .nav__item .desc {
       font-family: "Open Sans", sans-serif;
       font-size: 1.2rem;
@@ -178,7 +177,7 @@ i {
     height: 25vh;
     padding-top: 70px; }
     .nav--mobile .nav__item--tall:hover {
-      background-color: rgba(53, 36, 23, 0.98); }
+      background-color: #352417; }
 
 /*-------------------------------------------*\
                    content
@@ -215,10 +214,10 @@ main {
   left: 15vw;
   width: 70vw; }
 #index-page .nav--desktop .nav__item {
-  color: #413d2d;
-  box-shadow: inset 0px -1px 0px 0px #413d2d; }
+  color: #352417;
+  box-shadow: inset 0px -1px 0px 0px #352417; }
 #index-page .nav--desktop .nav__item:hover {
-  box-shadow: inset 0px -3px 0px 0px #413d2d; }
+  box-shadow: inset 0px -3px 0px 0px #352417; }
 
 #careers-page main > p:last-child,
 #contact-page main {
@@ -236,7 +235,6 @@ main {
 
 .map {
   width: 100%;
-  border: 2px solid #000;
   margin-top: 4rem; }
 
 /*-------------------------------------------*\

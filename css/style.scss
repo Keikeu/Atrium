@@ -11,6 +11,12 @@ $font-size-regular: 1.6rem;
 $font-size-large: 2rem;
 $font-size-x-large: 2.4rem;
 
+$color-white: #fff;
+$color-gray: #ccc;
+$color-orange: #d67437;
+$color-brown: #110a04;
+$color-dark-brown: #352417;
+
 
 /*-------------------------------------------*\
                    general
@@ -70,7 +76,7 @@ h2 {
 
   font-size: $font-size-text;
   font-weight: 700;
-  color: #d67437;
+  color: $color-orange;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
@@ -116,12 +122,11 @@ i {
   height: 42px;
   width: 42px;
 
-  border: 1px solid #ffffff;
-  background-color: #211408;
-  opacity: 0.9;
+  border: 1px solid $color-white;
+  background-color: $color-brown;
 
   font-size: 24px;
-  color: #ffffff;
+  color: $color-white;
   text-align: center;
   line-height: 40px;
 
@@ -145,8 +150,8 @@ i {
   width: 100%;
   height: 12vh;
 
-  background: rgba(17, 10, 4, 0.8);
-  background: linear-gradient(to bottom, rgba(17,10,4,0.8) 0%, rgba(17,10,4,0.6) 50%, rgba(17,10,4,0.3) 75%, rgba(17,10,4,0.05) 95%, rgba(17,10,4,0) 100%);
+  background: rgba($color-brown, .8);
+  background: linear-gradient(to bottom, rgba($color-brown, .8) 0%, rgba($color-brown, .6) 50%, rgba($color-brown, .3) 75%, rgba($color-brown, .05) 95%, rgba($color-brown, 0) 100%);
 }
 
 .nav--desktop {
@@ -166,17 +171,17 @@ i {
     display: inline-block;
     width: 120px;
     padding: 10px;
-    box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px -1px 0px 0px rgba($color-white, 1);
     font-size: $font-size-regular;
     font-weight: 600;
-    color: #ffffff;
+    color: $color-white;
     text-align: center;
     transition-duration: .3s;
   }
 
   .nav__item:hover,
   .nav--desktop .nav__item--active {
-    box-shadow: inset 0px -3px 0px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px -3px 0px 0px rgba($color-white, 1);
   }
 }
 
@@ -196,12 +201,12 @@ i {
   font-size: 20px;
   letter-spacing: 3px;
   transition: 400ms;
-  color: #fff;
+  color: $color-white;
   z-index: 3;
 
   .nav__item {
     opacity: 0;
-    background-color: rgba(53, 36, 23, 0.98);
+    background-color: rgba($color-dark-brown, .98);
     padding: 30px 0 20px 0;
     margin: 0;
     height: 15vh;
@@ -210,7 +215,7 @@ i {
     transition: 400ms;
 
     &:hover {
-      background-color: rgba(53, 36, 23, 0.9);
+      background-color: rgba($color-dark-brown, 1);
     }
 
     .desc {
@@ -233,7 +238,7 @@ i {
     padding-top: 70px;
 
     &:hover {
-      background-color: rgba(53, 36, 23, 0.98);
+      background-color: rgba($color-dark-brown, 1);
     }
   }
 }
@@ -249,7 +254,7 @@ i {
   bottom: 20px;
   right: 0;
   font-size: 20px;
-  color: #ccc;
+  color: $color-gray;
 }
 
 main {
@@ -259,9 +264,9 @@ main {
   align-items: flex-start;
 
   min-height: 76vh;
-  background-color: rgba(17, 10, 4, 0.85);
+  background-color: rgba($color-brown, 0.85);
 
-  color: #fff;
+  color: $color-white;
   text-align: center;
   font-size: $font-size-text;
 
@@ -288,12 +293,12 @@ main {
   }
 
   .nav--desktop .nav__item {
-    color: #413d2d;
-    box-shadow: inset 0px -1px 0px 0px #413d2d;
+    color: $color-dark-brown;
+    box-shadow: inset 0px -1px 0px 0px $color-dark-brown;
   }
 
   .nav--desktop .nav__item:hover {
-    box-shadow: inset 0px -3px 0px 0px #413d2d;
+    box-shadow: inset 0px -3px 0px 0px $color-dark-brown;
   }
 }
 
@@ -315,7 +320,6 @@ main {
 
 .map {
   width: 100%;
-  border: 2px solid #000;
   margin-top: 4rem;
 }
 
