@@ -256,10 +256,14 @@ main {
   main .column {
     width: 50%; }
 
-  main {
+  #index-page main,
+  #about-page main,
+  #coffee-page main,
+  #menu-page main,
+  #careers-page main,
+  #contact-page main {
     width: 65vw;
-    margin: 14vh auto 10vh;
-    padding: 5vh 10%; }
+    margin: 14vh auto 10vh; }
 
   #about-page main {
     padding: 5vh 10%; }
